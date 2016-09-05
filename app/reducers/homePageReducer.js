@@ -1,4 +1,4 @@
-const defaultState = {
+const initialState = {
   activeMode: 'movies',
   activeModeOptions: {},
   modes: {
@@ -11,7 +11,7 @@ const defaultState = {
   items: []
 };
 
-export default function itemList(state = defaultState, action) {
+export default function itemList(state = initialState, action) {
   switch (action.type) {
 
     // Add the items. This should be done after getting the paginated results
