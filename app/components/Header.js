@@ -2,7 +2,7 @@
 import React, { Component, PropTypes } from 'react';
 import { browserHistory } from 'react-router';
 import classNames from 'classnames';
-import Butter from '../../api/Butter';
+import Butter from '../api/Butter';
 
 
 export default class Header extends Component {

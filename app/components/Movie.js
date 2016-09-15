@@ -11,17 +11,17 @@ import {
 import { Link } from 'react-router';
 import notie from 'notie';
 import { exec } from 'child_process';
-import { getIdealTorrent } from '../../api/torrents/BaseTorrentProvider';
-import Butter from '../../api/Butter';
-import Torrent from '../../api/Torrent';
-import CardList from '../card/CardList';
-import Rating from '../card/Rating';
-import Show from '../show/Show';
+import { getIdealTorrent } from '../api/torrents/BaseTorrentProvider';
+import Butter from '../api/Butter';
+import Torrent from '../api/Torrent';
+import CardList from './CardList';
+import Rating from './Rating';
+import Show from './Show';
 import {
   convertFromBuffer,
   startServer
-} from '../../api/Subtitle';
-import Player from '../../api/Player';
+} from '../api/Subtitle';
+import Player from '../api/Player';
 
 
 export default class Movie extends Component {
@@ -438,7 +438,6 @@ export default class Movie extends Component {
     } = this.state;
 
     const { activeMode } = this.props;
-
     const torrentLoadingStatusStyle = { color: 'maroon' };
 
     return (
@@ -580,7 +579,6 @@ export default class Movie extends Component {
                   </Dropdown>
                 </div>
               </div>
-
 
               {item.certification
                 ? <div className="certification">{item.certification}</div>

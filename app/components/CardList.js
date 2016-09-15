@@ -3,7 +3,7 @@
  */
 import React, { PropTypes } from 'react';
 import Card from './Card';
-import Loader from '../loader/Loader';
+import Loader from './Loader';
 
 
 export default function CardList({ items, isLoading, isFinished }) {

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import Movie from '../components/movie/Movie';
+import Movie from '../components/Movie';
 
 
 export default function MoviePage({ params }) {

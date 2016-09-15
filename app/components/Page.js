@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from '../card/Card';
+import Card from './Card';
 
 
 export default class Page extends Component {

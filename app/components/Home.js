@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
-import Butter from '../../api/Butter';
-import Header from '../header/Header';
-import CardList from '../card/CardList';
+import Butter from '../api/Butter';
+import Header from './Header';
+import CardList from './CardList';
 
 
 export default class Home extends Component {
@@ -11,7 +11,6 @@ export default class Home extends Component {
     super(props);
 
     this.butter = new Butter();
-
     this.onChange = this.onChange.bind(this);
   }
 
